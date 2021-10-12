@@ -1,0 +1,758 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Oct 12 11:55:58 2021
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 2
+# environment
+PLATFORMIO_IDE = 2.3.3
+# makefile (from 'Makefile', line 31)
+INCLUDES = -I Include -I Include/gcc -Iinterface
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/makers/crazyflie2-nrf-firmware
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 8)
+DEBUG_PRINT_ON_SEGGER_RTT = 0 
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 22)
+OPENOCD_DIR = 
+# environment
+_ = /usr/share/code/code
+# makefile (from 'Makefile', line 83)
+CFLAGS = $(PROCESSOR) $(NRF) $(PERSONAL_DEFINES) $(INCLUDES) $(CONFIG) $(BUILD_OPTION) -DS110=1 -DBLE=1 -DBLE_STACK_SUPPORT_REQD -DNRF51 -I$(NRF51_SDK)/Include/gcc -I$(NRF51_SDK)/Include/ -I$(NRF51_SDK)/Include/ble/ -I$(NRF51_SDK)/Include/ble/ble_services/ -I$(NRF51_SDK)/Include/ble/device_manager/ -I$(NRF_S110)/s110_nrf51822_7.3.0_API/include -I$(NRF_S110)/Include/ -I$(NRF51_SDK)/Include/app_common/ -I$(NRF51_SDK)/Include/sd_common/ -I$(NRF51_SDK)/Include/sdk/
+# makefile (from 'Makefile', line 24)
+OPENOCD_TARGET = target/nrf51.cfg
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+QT_IM_MODULE = ibus
+# environment
+USERNAME = makers
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 15)
+AS = $(CROSS_COMPILE)as
+# makefile (from 'Makefile', line 85)
+OBJS = src/ble/ble.o src/ble/ble_crazyflies.o src/ble/timeslot.o $(NRF51_SDK)/Source/ble/ble_advdata.o $(NRF51_SDK)/Source/ble/ble_conn_params.o $(NRF51_SDK)/Source/ble/ble_services/ble_srv_common.o $(NRF51_SDK)/Source/ble/ble_services/ble_dis.o $(NRF51_SDK)/Source/sd_common/softdevice_handler.o $(NRF51_SDK)/Source/app_common/app_timer.o $(NRF51_SDK)/Source/app_common/pstorage.o $(NRF51_SDK)/Source/ble/device_manager/device_manager_peripheral.o src/main.o gcc_startup_nrf51.o system_nrf51.o src/uart.o src/syslink.o src/pm.o src/systick.o src/button.o src/swd.o src/ow.o src/ow/owlnk.o src/ow/ownet.o src/ow/owtran.o src/ow/crcutil.o src/ds2431.o src/ds28e05.o src/esb.o src/memory.o src/platform.o src/platform_$(PLATFORM).o src/debug.o src/shutdown.o
+# environment
+CLUTTER_IM_MODULE = xim
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/makers
+# makefile (from 'Makefile', line 4)
+CLOAD_SCRIPT = python3 -m cfloader
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+NO_PROXY = 127.0.0.1
+# makefile (from 'Makefile', line 16)
+LD = $(CROSS_COMPILE)gcc
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/makers-HP-ZBook-15-G3:@/tmp/.ICE-unix/1171,unix/makers-HP-ZBook-15-G3:/tmp/.ICE-unix/1171
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+TEXTDOMAIN = im-config
+# makefile (from 'Makefile', line 21)
+OPENOCD = openocd
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=cdd82c32-52a3-47a0-bc23-13742d0653cd&iid=cdd82c32-52a3-47a0-bc23-13742d0653cd&sid=cdd82c32-52a3-47a0-bc23-13742d0653cd","uploadToServer":true}
+# makefile (from 'Makefile', line 50)
+LDFLAGS = $(PROCESSOR) -O0 --specs=nano.specs -Wl,-Map=$(PROGRAM).map -T gcc_nrf51_s110_xxaa.ld
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 8731
+# makefile (from 'Makefile', line 18)
+SIZE = $(CROSS_COMPILE)size
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+GTK_IM_MODULE = ibus
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/makers/crazyflie2-nrf-firmware
+# makefile (from 'Makefile', line 19)
+GDB = $(CROSS_COMPILE)gdb
+# makefile (from 'Makefile', line 7)
+BLE = 1     
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 1285
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/makers
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# makefile (from 'Makefile', line 38)
+NRF = -DNRF51
+# environment
+LOGNAME = makers
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from 'Makefile', line 29)
+NRF_S110 = s110
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+MAKE_VERSION := 4.1
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 1
+# makefile (from 'Makefile', line 35)
+PERSONAL_DEFINES = 
+# environment
+MAKELEVEL := 0
+# environment
+PLATFORMIO_PATH = /home/makers/.platformio/python3/bin:/home/makers/.local/bin:/home/makers/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+PATH = /home/makers/.local/bin:/home/makers/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 14)
+CC = $(CROSS_COMPILE)gcc
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# makefile (from 'Makefile', line 37)
+PROCESSOR = -mcpu=cortex-m0 -mthumb
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-03c35a98-c5b2-4b34-90cd-db82eb7ceeef.sock
+# makefile (from 'Makefile', line 42)
+ASFLAGS = $(PROCESSOR)
+# environment
+XDG_SESSION_ID = 1
+# environment
+USER = makers
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /home/makers/.config/Code/CachedData/507ce72a4466fbb27b715c3722558bb15afa9f48
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_IL:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-6a4c42d8-1.57.1-main.sock
+# makefile (from 'Makefile', line 39)
+PROGRAM = $(PLATFORM)_nrf
+# makefile (from 'Makefile', line 6)
+S110 = 1     
+# makefile (from 'Makefile', line 34)
+BUILD_OPTION = -g3 -O0 -Wall -Werror -fsingle-precision-constant -ffast-math -std=gnu11
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+BREAKPAD_DUMP_LOCATION = /home/makers/.config/Code/exthost Crash Reports
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+S_COLORS = auto
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 23)
+OPENOCD_INTERFACE = $(OPENOCD_DIR)interface/stlink-v2.cfg
+# makefile (from 'Makefile', line 12)
+CROSS_COMPILE = arm-none-eabi-
+# environment
+TEXTDOMAINDIR = /usr/share/locale/
+# makefile (from 'Makefile', line 10)
+PLATFORM = cf2
+# makefile (from 'Makefile', line 25)
+OPENOCD_CMDS = 
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 28)
+NRF51_SDK = nrf51_sdk/nrf51822
+# environment
+LC_ALL = C
+# environment
+QT4_IM_MODULE = xim
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 17)
+OBJCOPY = $(CROSS_COMPILE)objcopy
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 1
+ 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+VSCODE_PID = 8731
+# variable set hash-table stats:
+# Load=137/1024=13%, Rehash=0, Collisions=57/287=20%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66306, inode 9962932): 36 files, no impossibilities.
+
+# 36 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+flash_mbs: bootloaders/nrf_mbs_v1.0.hex
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 155):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets -c "reset halt" \
+                 -c "flash write_image erase $^" -c "verify_image $^" -c "reset halt" \
+	               -c "mww 0x4001e504 0x01" -c "mww 0x10001014 0x3F000" \
+	               -c "reset run" -c shutdown
+
+nrf51_sdk/nrf51822/Source/app_common/pstorage.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/swd.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bootloaders/cload_nrf_cf21.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gdb: cf2_nrf.elf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 194):
+	$(GDB) -ex "target remote localhost:3333" -ex "monitor reset halt" $^
+
+# Not a target:
+config.mk:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+all: cf2_nrf.elf cf2_nrf.bin cf2_nrf.hex
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 99):
+	$(SIZE) $(PROGRAM).elf
+	@echo "S110 Activated"
+	@echo "BLE  Activated"
+	@echo "Built for platform $(PLATFORM)"
+
+FORCE:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+openocd: cf2_nrf.elf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 187):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets
+
+nrf51_sdk/nrf51822/Source/ble/ble_advdata.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/esb.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/main.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bootloaders/nrf_mbs_cf21.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cf2_nrf.bin: cf2_nrf.elf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 116):
+	$(OBJCOPY) $^ -O binary $@
+
+gcc_startup_nrf51.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/ow/owlnk.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Include/version.h: FORCE
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Last modified 2021-10-12 11:55:39.139445981
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := Include/version.h
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := FORCE
+# automatic
+# | := 
+# automatic
+# < := FORCE
+# automatic
+# ^ := FORCE
+# automatic
+# ? := FORCE
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
+#  recipe to execute (from 'Makefile', line 135):
+	python3 tools/build/generateVersionHeader.py --crazyflie-base $(abspath .) --output $@
+
+src/ow/ownet.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/platform_cf2.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cf2_nrf.hex: cf2_nrf.elf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 113):
+	$(OBJCOPY) $^ -O ihex $@
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/ds28e05.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-12 11:17:04.072755094
+#  File has been updated.
+#  Successfully updated.
+
+src/memory.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flash_cload: bootloaders/cload_nrf_v1.0.hex
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 161):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets -c "reset halt" \
+                 -c "flash write_image erase $^" -c "verify_image $^" -c "reset halt" \
+	               -c "mww 0x4001e504 0x01" -c "mww 0x10001014 0x3F000" \
+	               -c "mww 0x4001e504 0x01" -c "mww 0x10001080 0x3A000" -c "reset run" -c shutdown
+
+nrf51_sdk/nrf51822/Source/ble/device_manager/device_manager_peripheral.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/uart.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/ow.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/shutdown.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/button.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+factory_reset_21:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 217):
+	make mass_erase
+	make flash_s110
+	make flash_mbs_21
+	make flash_cload_21
+	make flash
+
+src/debug.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flash_mbs_21: bootloaders/nrf_mbs_cf21.hex
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 167):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets -c "reset halt" \
+                 -c "flash write_image erase $^" -c "verify_image $^" -c "reset halt" \
+	               -c "mww 0x4001e504 0x01" -c "mww 0x10001014 0x3F000" \
+	               -c "reset run" -c shutdown
+
+cf2_nrf.elf: src/ble/ble.o src/ble/ble_crazyflies.o src/ble/timeslot.o nrf51_sdk/nrf51822/Source/ble/ble_advdata.o nrf51_sdk/nrf51822/Source/ble/ble_conn_params.o nrf51_sdk/nrf51822/Source/ble/ble_services/ble_srv_common.o nrf51_sdk/nrf51822/Source/ble/ble_services/ble_dis.o nrf51_sdk/nrf51822/Source/sd_common/softdevice_handler.o nrf51_sdk/nrf51822/Source/app_common/app_timer.o nrf51_sdk/nrf51822/Source/app_common/pstorage.o nrf51_sdk/nrf51822/Source/ble/device_manager/device_manager_peripheral.o src/main.o gcc_startup_nrf51.o system_nrf51.o src/uart.o src/syslink.o src/pm.o src/systick.o src/button.o src/swd.o src/ow.o src/ow/owlnk.o src/ow/ownet.o src/ow/owtran.o src/ow/crcutil.o src/ds2431.o src/ds28e05.o src/esb.o src/memory.o src/platform.o src/platform_cf2.o src/debug.o src/shutdown.o
+#  Implicit rule search has not been done.
+#  Last modified 2021-10-12 11:34:36.063746719
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 119):
+	$(LD) $(LDFLAGS) -o $@ $^
+
+# Not a target:
+s110/s110_nrf51822_7.3.0_softdevice.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/syslink.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+src/pm.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/ble/ble_crazyflies.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/ble/ble.o: | Include/version.h
+#  Implicit rule search has been done.
+#  Last modified 2021-10-12 11:34:33.571739305
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+nrf51_sdk/nrf51822/Source/ble/ble_services/ble_srv_common.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+reset:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 183):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets \
+	               -c reset -c shutdown
+
+src/ble/timeslot.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 138):
+	rm -f $(PROGRAM).bin $(PROGRAM).elf $(OBJS)
+
+nrf51_sdk/nrf51822/Source/sd_common/softdevice_handler.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/ds2431.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flash_cload_21: bootloaders/cload_nrf_cf21.hex
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 173):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets -c "reset halt" \
+                 -c "flash write_image erase $^" -c "verify_image $^" -c "reset halt" \
+	               -c "mww 0x4001e504 0x01" -c "mww 0x10001014 0x3F000" \
+	               -c "mww 0x4001e504 0x01" -c "mww 0x10001080 0x3A000" -c "reset run" -c shutdown
+
+src/ow/owtran.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/platform.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+nrf51_sdk/nrf51822/Source/ble/ble_services/ble_dis.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flash: cf2_nrf.hex
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 144):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET)  -c init -c targets -c "reset halt" \
+                 -c "flash write_image erase $(PROGRAM).hex" -c "verify_image $(PROGRAM).hex" \
+                 -c "reset run" -c shutdown
+
+system_nrf51.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flash_jlink:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 197):
+	JLinkExe -if swd -device NRF51822 flash.jlink
+
+cload: cf2_nrf.bin
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 201):
+	$(CLOAD_SCRIPT) flash $(PROGRAM).bin nrf51-fw
+
+semihosting: cf2_nrf.elf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 191):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets -c reset -c "arm semihosting enable" -c reset
+
+# Not a target:
+bootloaders/cload_nrf_v1.0.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flash_s110: s110/s110_nrf51822_7.3.0_softdevice.hex
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 149):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets -c "reset halt" \
+                 -c "nrf51 mass_erase" \
+                 -c "flash write_image erase s110/s110_nrf51822_7.3.0_softdevice.hex" \
+                 -c "reset run" -c shutdown
+
+src/systick.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/ow/crcutil.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+nrf51_sdk/nrf51822/Source/app_common/app_timer.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+nrf51_sdk/nrf51822/Source/ble/ble_conn_params.o: | Include/version.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mass_erase:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 179):
+	$(OPENOCD) -d2 -f $(OPENOCD_INTERFACE) $(OPENOCD_CMDS) -f $(OPENOCD_TARGET) -c init -c targets -c "reset halt" \
+                 -c "nrf51 mass_erase" -c shutdown
+
+factory_reset:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 208):
+	make mass_erase
+	make flash_s110
+	make flash_mbs
+	make flash_cload
+	make flash
+
+# Not a target:
+bootloaders/nrf_mbs_v1.0.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=64/1024=6%, Rehash=0, Collisions=12/164=7%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 96 / storage = 1598 B / avg = 16 B
+# current buf: size = 8162 B / used = 1598 B / count = 96 / avg = 16 B
+
+# strcache performance: lookups = 208 / hit rate = 53%
+# hash-table stats:
+# Load=96/8192=1%, Rehash=0, Collisions=1/208=0%
+# Finished Make data base on Tue Oct 12 11:55:58 2021
+
+ 
