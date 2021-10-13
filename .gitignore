@@ -13,9 +13,9 @@ config.mk
 .project
 .settings
 
-#Nordic libs
-s110
-nrf51_sdk
+# #Nordic libs
+# s110
+# nrf51_sdk
 
 # jykell files
 docs/.jekyll-metadata
