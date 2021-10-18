@@ -58,6 +58,8 @@
   #define OW_PIN 8
   #define WKUP_PIN 11
 
+  #define EMERGENCY_LAND_PIN 12 //This was added by M-R-Vulkan
+
   #define LED_PIN 13
 
   #define PM_CHG_PIN 0

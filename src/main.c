@@ -43,7 +43,7 @@
 #include "nrf_soc.h"
 #include "version.h"
 #include "shutdown.h"
-
+#include "emergency_land.h"
 #include "memory.h"
 #include "ownet.h"
 
@@ -110,6 +110,8 @@ int main()
   while(!NRF_CLOCK->EVENTS_LFCLKSTARTED);
 
   LED_INIT();
+  EMERGENCY_LAND_INIT();
+
   if ((NRF_POWER->GPREGRET & 0x80) && ((NRF_POWER->GPREGRET&(0x3<<1))==0)) {
     buttonInit(buttonShortPress);
   } else {
@@ -128,7 +130,7 @@ int main()
   }
 
   LED_ON();
-
+  EMERGENCY_LAND_OFF();
 
   NRF_GPIO->PIN_CNF[RADIO_PAEN_PIN] |= GPIO_PIN_CNF_DIR_Output | (GPIO_PIN_CNF_DRIVE_S0H1<<GPIO_PIN_CNF_DRIVE_Pos);
 
@@ -455,6 +457,7 @@ void mainloop()
 #define RADIO_CTRL_SET_CHANNEL 1
 #define RADIO_CTRL_SET_DATARATE 2
 #define RADIO_CTRL_SET_POWER 3
+#define RADIO_CTRL_EMERGENCY_LAND 4
 
 static void handleRadioCmd(struct esbPacket_s *packet)
 {
@@ -467,6 +470,9 @@ static void handleRadioCmd(struct esbPacket_s *packet)
       break;
     case RADIO_CTRL_SET_POWER:
       esbSetTxPower(packet->data[3]);
+      break;
+    case RADIO_CTRL_EMERGENCY_LAND:
+      EMERGENCY_LAND_ON();
       break;
     default:
       break;
